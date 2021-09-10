@@ -1,0 +1,572 @@
+@import url("https://fonts.googleapis.com/css?family=Acme|Lobster|Patua+One|Rubik|Sniglet");
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header,section{
+    overflow-x:hidden;
+}
+
+/* creating variables of fonts and colors */
+:root{
+    --Single-font:"Sniglet",cursive;
+    --Rubik:"Rubik",cursive;
+    --Patua:"Patua One",cursive;
+    --Lobster:"Lobster",cursive;
+    --light-black:#2e2c2cef;
+    --bggredient:linear-gradient(
+        to bottom,
+        #dd2476,#ff512f
+    );
+    --bggredientblue:linear-gradient(
+        to bottom,
+        #ae36f3,#3756e2
+    );
+    --light-gray:rgba(255,255,255,0.877);
+    --text-color: #fff;
+    --dark:#000;
+    --light-dark:rgb(75, 70, 70);
+    --primary: #eb722d;
+
+}
+
+/* giving nav links font size and color */
+header a{
+    font-family: var(--Single-font);
+    font-size: 0.9em;
+    color: whitesmoke !important;
+}
+header{
+    
+    background: url("../Images/servicesbg4.jpg");
+    padding-bottom: 10vmin;
+}
+
+/* giving padding right to last link of navbar */
+header .nav-item:last-child{
+    padding-right: 10.5em;
+    
+}
+/* giving pading to all nav items */
+header .nav-item{
+    padding: 0.9em;
+}
+/* giving padding to logo text */
+header .navbar{
+    padding-left: 8em;
+}
+
+
+/* hover effect on every nav link */
+header .nav-link:hover{
+    color: white;
+    background: var(--primary);
+    border-radius: 5px;
+    border: none;
+}
+
+
+header .row .col-md-5{
+    padding:4.2vmin 1vmin;
+}
+
+/* working on text on header home page */
+header .row .col-md-7{
+    padding:22vmin 1vmin;
+    padding-bottom: 32vmin;
+    font-family: var(--Rubik);
+    color: var(--text-color);
+}
+
+/* image on right side of home page */
+header .row .col-md-5 img{
+    margin-top: 20vmin;
+    width: 90%;
+}
+
+/* hey there text on home page */
+header .container  .col-md-7 h6{
+    padding:1vmin;
+    letter-spacing: 4px;
+    
+}
+
+/* title text on home page */
+header .container .col-md-7 h1{
+    font-size: 7.5vmin;
+    font-weight: bold;
+    padding:0.1em 0em;
+    
+}
+/* paragraph on homepage */
+header .container .col-md-7 p{
+    padding:1vmin 5vmin;
+}
+
+/* button on home header page */
+header .container .col-md-7 button{
+    border-radius: 30px;
+    background: var(--primary);
+    color: white;
+    border: none;
+}
+header .container .col-md-7 button:hover{
+    border: 2px solid white;
+    background: transparent;
+}
+
+/* here we start working with section about */
+.about{
+    height: 100vmin;
+    padding:30vmin 0;
+    /* background: #121212; */
+    
+   
+}
+.about .container{
+    opacity: 0.8;
+    width: 80%;
+    margin-top: -8vmin;
+    border-radius: 0.2em;
+    border-radius: 0% 40%;
+    z-index: 2;
+    margin-right: 100px;
+}
+
+.about .row .col-md-6 .pray img{
+    width: 80%;
+    max-height: 60vh;
+    margin-top: -8vmin;
+    border-radius: 0.2em;
+    border-radius: 0% 40%;
+    z-index: 2;
+    margin-right: 100px;
+}
+
+.about .row .col-md-6:last-child{
+    position: relative;
+}
+.about .row .col-md-6 .panel{
+    position: absolute;
+    top: -8vmin;
+    left: -18vmin;
+    background: white;
+    height: 60vh;
+    text-align: left;
+    z-index: 1;
+    padding:13vmin 5vmin 20vmin 10vmin;
+    font-family: var(--Rubik);
+    border-radius: 0.2em;
+}
+
+.about .row .col-md-6 .panel h1{
+    font-weight: bold;
+    padding: 0.4em 0;
+    font-size: 2em;
+}
+
+.about .row .col-md-6 .panel p{
+    font-size: 0.9em;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
+/* section 3 starts here */
+.section-3{
+    height: 70vmin;
+    margin-top: 15vmin;
+    background: var(--bggredient);
+}
+.section-3 .col-md-12 > h1{
+    padding:2em 0 0.5em 0;
+    color: whitesmoke;
+    font-size: 6vmin;
+}
+.section-3 .col-md-12 > p{
+    padding:0.4em;
+    
+    padding-bottom: 2em;
+    color: var(--light-gray);
+    font-size: 3vmin;
+}
+
+.section-3 .desktop{
+    background: white;
+    display: inline-block;
+    border-radius: 3em;
+    padding: 2vmin 4.5vmin;
+    margin: 1em;
+}
+.section-3 .desktop h3{
+    font-size: 4vmin;
+}
+.section-3 .desktop p{
+    font-size: 2vmin;
+}
+
+/* section 4 starts here */
+.section-4 .container h1{
+    font-size: 6vmin;
+    padding-top: 14vmin;
+}
+.section-4 .team{
+    padding:10vmin 4vmin;
+}
+.section-4 .card{
+    width: 22rem;
+    margin-top: 10vmin;
+    box-shadow: 0 25px 42px rgba(0, 0, 0, 0.5);
+
+}
+
+.section-4 .card .card-text{
+    padding: 0.5em;
+}
+
+.section-4 .card .card-body > a{
+    font-size: 1.5em;
+}
+
+.section-4 .carousel-item{
+    padding-left: 3rem;
+}
+
+/* footer starts here */
+footer{
+    background: rgba(0, 0, 0, 0.815);
+    overflow-x: hidden;
+    padding: 14vmin 18vmin;
+
+}
+footer p>span{
+    color: #ff512f;
+}
+
+footer input{
+    border: none !important;
+    margin-left: -15px;
+}
+footer input::placeholder{
+    color: white !important;
+}
+footer .input-group .input-group-text{
+    background: var(--bggredient);
+    border: none;
+    width: 40px;
+}
+footer .column i{
+    color: #dd2476;
+}
+footer .column i+i{
+    padding: 0 0.5em;
+}
+
+/* this is about sticky navbar */
+.sticky{
+    position: fixed;
+    top: 0;
+    height: 50px;
+    width: 100%;
+    background: var(--bggredientblue);
+    z-index: 9999;
+    transition: all 1.5s ease;
+}
+
+/* respoonsive services starts here */
+
+.services-section{
+    
+    background: var(--bggredientblue);
+    background-size: cover;
+    padding: 60px 0;
+  }
+  .inner-width{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    overflow: hidden;
+  }
+  .section-title{
+    text-align: center;
+    color: #ddd;
+    text-transform: uppercase;
+    font-size: 30px;
+  }
+  .border{
+    width: 160px;
+    height: 2px;
+    background: #82ccdd;
+    margin: 40px auto;
+  }
+  .services-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .service-box{
+    max-width: 33.33%;
+    padding: 10px;
+    text-align: center;
+    color: #ddd;
+    cursor: pointer;
+  }
+  .service-box:hover{
+      background: var(--dark);
+  }
+  
+  .service-icon{
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    border: 3px solid #82ccdd;
+    color: #82ccdd;
+    transform: rotate(45deg);
+    margin-bottom: 30px;
+    margin-top: 16px;
+    transition: 0.3s linear;
+  }
+  .service-icon i{
+    line-height: 70px;
+    transform: rotate(-45deg);
+    font-size: 26px;
+  }
+  .service-box:hover .service-icon{
+    background: #82ccdd;
+    color: #ddd;
+  }
+  .service-title{
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  .service-desc{
+    font-size: 14px;
+  }
+  
+ /* MY WORK SECTION STYLE STARTS HERE */
+
+  .project-area{
+    padding: 6rem 0;
+}
+
+.project-area h1{
+    margin-bottom: -50px;
+}
+.project-area .button-group button{
+    background: transparent;
+    border: none;
+    font: normal 500 16px/130px var(--Patua);
+    text-transform: uppercase;
+
+}
+
+.project-area .button-group button + button{
+    padding-left: 2rem;
+}
+.project-area .grid .our-project > .title h4{
+    font: normal 700 25px/12px var(--Patua);
+}
+
+.project-area .button-group button:focus,
+.project-area .button-group button:hover,
+.project-area .button-group button:active{
+    outline: 0px !important;
+    border: none !important;
+}
+.project-area .grid .our-project .img a:hover img{
+    filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
+}
+
+ /* MY WORK SECTION STYLE ENDS HERE */
+
+ /* SKILLS SECTION STARTS HERE */
+ 
+.skill-item{
+    margin: 30px;
+    
+    
+}
+
+.skills h2{
+    margin-left: 30px;
+    font-family: var(--Lobster);
+}
+
+.skills{
+    position: relative;
+    /* z-index: 1; */
+    background: rgba(0, 0, 0, 0.815);
+    width: 100%;
+    color: white;
+    padding-top: 8.5vmin;
+    margin: auto;
+    /* border-radius: 0.5em; */
+    margin-top: 30px;
+    /* box-shadow: 1px 2px 50px 0 rgba(255, 0, 0, 0.349); */
+}
+.progress{
+    background: #e3e3e3;
+    height: 4px;
+    margin-top: 10px;
+    border-radius: 2px;
+    width: 85%;
+    position: relative;
+    
+}
+
+.progress-in{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 1px;
+    background: var(--bggredientblue);
+}
+
+
+.professional-skills .skill-item .skill-percent{
+    line-height: 40px;
+    position: absolute;
+    right: 0;
+    color: black;
+    background: blue;
+    top: -40px;
+    font-weight: 400;
+}
+
+
+/* SKILLS SECTION ENDS HERE */
+  /* section 2 starts here */
+
+
+/* CONTACT US SECTION STARTS HERE */
+
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    width: 100%;
+    background: #001923;
+    background: url('../Images/contactus.jpg');
+
+}
+
+
+.contact .container{
+    position: relative;
+    z-index: 1000;
+    width: 100%;
+    max-width: 1000px;
+    padding: 50px;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 45px rgba(0,0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    backdrop-filter: blur(25px);
+    
+
+}
+
+
+.contact .container h2{
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 36px;
+    margin-bottom: 20px;
+
+}
+.contact .container textarea,
+.contact .container input{
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    box-shadow: none;
+    margin: 5px 0;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    outline: none;
+    font-size: 15px;
+    padding: 0 10px;
+    z-index: 1;
+    color: #fff
+
+}
+
+.contact .container input[type=file]{
+    border: none;
+}
+
+
+.contact .container span.text{
+    color: rgb(212, 204, 204);
+}
+.contact .container textarea{
+    height: 100px;
+}
+.contact .container input[type=submit]{
+    border-radius: 30px;
+    width: 150px;
+    background: var(--primary);
+    color: white;
+    border: none;
+}
+
+
+.contact .container input[type=submit]:hover{
+    border: 2px solid white;
+    background: transparent;
+    color: #000;
+    transition: all 0.3s ease;
+}
+
+/* designing status */
+#status{
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+#status.success{
+    background: rgb(211, 250, 153);
+    color: black;
+    animation: status 4s ease forwards;
+
+}
+#status.error{
+    background: rgb(250, 129, 92);
+    color: black;
+    animation: status 4s ease forwards;
+
+}
+
+@keyframes status {
+    0%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    90%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    100%{
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+/* CONTACT US SECTION ENDS HERE */
